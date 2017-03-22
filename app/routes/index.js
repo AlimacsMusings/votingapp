@@ -25,6 +25,12 @@ module.exports = function (app, passport) {
 			res.sendFile(path + '/public/login.html');
 		});
 
+
+	app.route('/voting')
+		.get(function (req, res) {
+			 res.redirect('/public/showpoll.html');
+	});
+
 	app.route('/logout')
 		.get(function (req, res) {
 			req.logout();
@@ -54,4 +60,6 @@ module.exports = function (app, passport) {
 		.get(isLoggedIn, clickHandler.getClicks)
 		.post(isLoggedIn, clickHandler.addClick)
 		.delete(isLoggedIn, clickHandler.resetClicks);
+
+
 };

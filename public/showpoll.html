@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Voting app</title>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <div class="row firstrow">
+  <div class="jumbotron bg-1">
+    <h3>Voting App</h3>
+    <div>
+      <div class="jumbotron bg-1">
+        <div id="piechart" class="bg-1 center-block" ></div>
+        <div class="form-group">
+          <h4>I want to vote for.......</h4>
+          <select class="term" id="selVotes"></select>
+        </div>
+        <button type="submit" id="submit" class="btn btn-default">Submit</button>
+        <button type="submit" id="random" class="btn twitter-share-button">Share on Twitter</button>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false">Tweet</a>
+         <a class="tweet-link" href="" target="_blank"><span class="twitter fa fa-twitter-square" aria-hidden="false">
+           <span class="sr-only">Post to Twitter</span></span></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row secondrow bg-2">
+  <div class="col-sm-1"></div>
+  <div class="result col-sm-10">
+    <ul id="output" class=" text-left">
+    </ul>
+    <div>
+    </div>
+  </div>
+  <div class="col-sm-1"></div>
+</div>
+<footer class = "bg-1">Built by <em>AliMac</em></footer>
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script src="/controllers/pollController.client.js"></script>
+
+</body>
+</html>
